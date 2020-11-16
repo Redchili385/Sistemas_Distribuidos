@@ -36,6 +36,7 @@ public class MqttTemperaturePublisher {
         System.out.println("Disconnecting");
         sampleClient.disconnect();
         System.out.println("Disconnected");
+        i = i + 1l;
         try{
           Thread.sleep(1000);
         }
