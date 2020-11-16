@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Exercicios/Thrift/jars/libthrift-0.13.0.jar",
+        "Exercicios/Thrift/jars/slf4j-api-1.7.21.jar"
+    ]
+}
