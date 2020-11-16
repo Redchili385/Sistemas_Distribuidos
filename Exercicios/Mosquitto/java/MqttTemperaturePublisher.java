@@ -17,10 +17,10 @@ public class MqttTemperaturePublisher {
     try {
       MqttClient sampleClient = new MqttClient(broker, clientId, persistence);
       MqttConnectOptions connOpts = new MqttConnectOptions();
-      connOpts.setCleanSession(true);
       
       Long i = 0l;
       while(i < Long.MAX_VALUE){
+        connOpts.setCleanSession(true);
         System.out.println("Connecting to broker: "+broker);
         sampleClient.connect(connOpts);
         System.out.println("Connected");
